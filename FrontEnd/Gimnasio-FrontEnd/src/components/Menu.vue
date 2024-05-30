@@ -1,4 +1,6 @@
 <template>
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  
 
   <div class="menu-container">
 
@@ -7,7 +9,7 @@
 
       <li class="menu__top">
         <router-link to="/" class="menu__logo">
-          <img src="" alt="icon">
+          <img src="/icon-32.png" alt="icon">
         </router-link>
         <a
         href="#"
@@ -191,3 +193,6 @@ export default {
 
 }
 </script>
+
+
+
