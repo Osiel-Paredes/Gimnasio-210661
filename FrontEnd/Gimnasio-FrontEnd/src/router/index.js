@@ -3,6 +3,10 @@ import LoginView from '@/components/LoginView.vue'
 import RegisterUser from '@/components/RegisterUser.vue'
 import  Home from '@/components/Home.vue'
 import Menu from '@/components/Menu.vue'
+import Persona from '@/components/Persona.vue'
+import Base from '@/components/Base.vue'
+import Membresia from '@/components/Membresia.vue'
+import Miembro from '@/components/Miembro.vue'
 
 
 const router = createRouter({
@@ -18,10 +22,17 @@ const router = createRouter({
       name: 'signup',
       component: RegisterUser
     },
+   
     {
       path: '/home',
       name: 'home',
-      component: Menu
+      component: Menu,
+      children:[
+        {path:'/base', name: 'base', component:Base},
+        {path:'/persona', name: 'persona', component:Persona},
+        {path:'/membresia', name: 'membresia', component:Membresia},
+        {path:'/miembro', name: 'miembro', component:Miembro}
+      ]
     }
   ]
 })
