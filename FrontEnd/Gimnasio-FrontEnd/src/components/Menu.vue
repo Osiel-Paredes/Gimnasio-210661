@@ -1,4 +1,7 @@
+
+
 <template>
+  <div>
    <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
        aria-controls="sidebar-multi-level-sidebar" type="button"
        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
@@ -309,9 +312,27 @@
            </ul>
        </div>
    </aside>
+ </div>
+
    
 
-   <div class="p-4 sm:ml-64 m-8">
+   <div class="p-4 sm:ml-64 m-8 flex-grow p-4">
        <router-view />
    </div>
+
+   <div class="col">
+    <PiedePag/>
+   </div>
+   
+
 </template>
+
+<script>
+import PiedePag from './PiedePag.vue';
+export default {
+    components: {
+        PiedePag
+    }
+}
+</script>   
+

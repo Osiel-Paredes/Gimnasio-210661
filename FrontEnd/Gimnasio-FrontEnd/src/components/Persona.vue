@@ -84,6 +84,7 @@
     <ListarPersonas/>
 </div>
 
+
 </template>
 <script>
 import ListarPersonas from './ListarPersonas.vue'
@@ -93,3 +94,4 @@ export default {
     }
 }
 </script>
+
